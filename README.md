@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This repo is made to help the students make a complete mobile robot stack from scratch! The course is covered in MTE544 at the University of Waterloo taught by 
+This repo is made to help the students make a complete mobile robot stack from scratch! The course is covered in ME597 at the University of Waterloo taught by 
 [Prof. Soo Jeon](https://uwaterloo.ca/mechanical-mechatronics-engineering/profile/soojeon). 
 
 ## What do you need to carry through this course?
