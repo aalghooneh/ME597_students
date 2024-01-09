@@ -14,7 +14,7 @@ It is worth mentioning that you can still follow the course without a robot and 
 The course starts with lab1, which covers how to run the tb4 or the simulation, then it covers reading the sensory data and the explanation of the sensory outputs, and how to log them. 
 
 The overall stack for a mobile robot can be summarized as something like this:
-![mobile_robotics_plan](https://github.com/aalghooneh/ME597_students/blob/817e5f5655fe5d6ef888cb30720d481a054b7236/stack.png)
+![mobile_robotics_plan](https://github.com/aalghooneh/ME597_students/blob/d6b1a15b3348a29790763c0fc2cf1dfe05e8e381/stack.png)
 
 The development of this stack starts from LAB-2 by developing a closed-loop controller. You can see in the diagram the components that you will be developing in the remaining labs and how they are interconnected.
 
