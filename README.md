@@ -1,7 +1,7 @@
 # ME597 - Autonomous Mobile Robots - Setup
 
 ## Install pre-requisites of the course
-If you have not installed Ubuntu 22.04 yet, please do that first.
+If you have not installed Ubuntu 22.04 yet, please follow the virtual machine installation guide in this branch.
 Download the script (or if you installed ```git```, clone this repository with ```git clone https://github.com/aalghooneh/ME597_students```, then change the branch to ```setup``` with ```git checkout setup```)
 
 Run the script (it needs sudo privilege, so you will need to type in your password when prompted):
