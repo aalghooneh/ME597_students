@@ -77,7 +77,7 @@ sleep 1
 
 if [ -d "/home/$USER/robohub" ]
 then
-    echo "already made the glone"
+    echo "already made the clone"
 else
 
    mkdir /home/$USER/robohub && cd /home/$USER/robohub && git clone https://git.uwaterloo.ca/robohub/turtlebot4.git
