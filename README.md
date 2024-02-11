@@ -102,7 +102,8 @@ Now that you have implemented a P-controller, proceed with the extension to incl
 - Tune your code based on the plots; follow the comments in ```decisions.py```.
 
 ## Part 6 - Perform trajectories and log your error (20 marks)
-Implement more complex trajectories to test the performance of your controllers, follow the comments in ```planner.py```, and ```controller.py```. Cover these two trajectories, while logging the error. 
+Implement more complex trajectories to test the performance of your controllers, follow the comments in ```planner.py```, and ```controller.py```. Cover these two trajectories, while logging the error.
+Note that you can scale these trajectories the much you like, as long as the resulted trajectory preserve the form.
 
 * $y = x^2$
 * $\sigma(x) = {1}/({1 + e^{-x}})$
