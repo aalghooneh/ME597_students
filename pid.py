@@ -14,6 +14,8 @@ class PID_ctrl:
         # Data for the controller
         self.history_length=history_length
         self.history=[]
+        self.history_integration = []
+        self.history_integration_length = ... # integration needs larger history, however if it is too large, it would create larger actuations, try different numbers here
         self.type=type_
 
         # Controller gains
@@ -40,15 +42,21 @@ class PID_ctrl:
         latest_error=stamped_error[0]
         stamp=stamped_error[1]
         
-        self.history.append(stamped_error)        
+        self.history.append(stamped_error)
+        self.history_integration.append(stamped_error)
         
         if (len(self.history) > self.history_length):
             self.history.pop(0)
+
         
         # If insufficient data points, use only the proportional gain
         if (len(self.history) != self.history_length):
             return self.kp * latest_error
-        
+
+
+        if (len(self.history_integration) > self.history_integration_length):
+            self.history_integration.pop(0)
+            
         # Compute the error derivative
         dt_avg=0
         error_dot=0
@@ -73,7 +81,7 @@ class PID_ctrl:
         
         # Compute the error integral
         sum_=0
-        for hist in self.history:
+        for hist in self.history_integration:
             # TODO Part 5: Gather the integration
             # sum_+=...
             pass
