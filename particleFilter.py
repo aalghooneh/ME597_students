@@ -28,7 +28,7 @@ from nav_msgs.msg import OccupancyGrid
 
 class particleFilter(Node):
 
-    def __init__(self, mapFilename="/home/dastan/final/maps/room.yaml", numParticles=500):
+    def __init__(self, mapFilename="./your_map/room.yaml", numParticles=500):
         
         super().__init__("particleFiltering")
         
@@ -45,7 +45,7 @@ class particleFilter(Node):
         
 
         self.odomSub = message_filters.Subscriber(self, Odometry, "/odom",
-                                                   qos_profile=qos_profile_laserScanner)
+                                                   qos_profile=qos_profile_odom)
         self.laserScanSub = message_filters.Subscriber(self, LaserScan, "/scan",
                                                         qos_profile=qos_profile_laserScanner)
 
