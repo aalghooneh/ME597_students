@@ -73,7 +73,7 @@ ros2 launch turtlebot4_viz view_robot.launch.py
 # terminal 4
 ros2 run nav2_map_server map_saver_cli -f room
 ``` 
-When the map is acquired, copy the generated files ```room.yaml``` and ```room.pgm``` to the ```your_map``` directory. **In case that you picked the robot or it hit an obstacle**, you should pick your robot back and place it on the entrance, then **reset odometry** again so the odometry matches your map acquisition.
+When the map is acquired, copy the generated files ```room.yaml``` and ```room.pgm``` to the ```your_map``` directory. **In case that you picked the robot or it hit an obstacle**, you should pick your robot back and place it on the entrance, then **reset odometry** again so the odometry matches your map acquisition. **Please make sure you killed the slam and the visualization terminals with Cntrl+C or closing the terminal**.
 
 **Show the map to a TA to score the marks associated to this part.**
 
