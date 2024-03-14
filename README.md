@@ -69,6 +69,8 @@ ros2 service call /reset_pose irobot_create_msgs/srv/ResetPose {}
 # terminal 2
 ros2 launch turtlebot4_navigation slam.launch.py
 # terminal 3
+ros2 launch turtlebot4_viz view_robot.launch.py
+# terminal 4
 ros2 run nav2_map_server map_saver_cli -f room
 ``` 
 When the map is acquired, copy the generated files ```room.yaml``` and ```room.pgm``` to the ```your_map``` directory. **In case that you picked the robot or it hit an obstacle**, you should pick your robot back and place it on the entrance, then **reset odometry** again so the odometry matches your map acquisition.
